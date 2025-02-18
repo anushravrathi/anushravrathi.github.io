@@ -131,7 +131,7 @@
         appendMessage(input, "user");
         inputField.value = "";
   
-        fetch("https://hhsdk-backend.onrender.com", {
+        fetch("https://hhsdk-backend.onrender.com/chatbot", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ message: input, userId: "user123" }),
